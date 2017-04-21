@@ -1,0 +1,83 @@
+{
+	"variables": [],
+	"info": {
+		"name": "localhost",
+		"_postman_id": "6202fc44-282e-eb87-4179-806ee9df9808",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:9103/search/attributes",
+					"request": {
+						"url": "http://localhost:9103/search/attributes",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9103/search?keyWords=\"bosch\"",
+					"request": {
+						"url": "http://localhost:9103/search?keyWords=\"bosch\"",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "keyword search"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9103/product/00000346304770",
+					"request": {
+						"url": "http://localhost:9103/product/00000346304770",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "get a specific product"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "prima",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:9107/products/importPTdata",
+					"request": {
+						"url": "localhost:9107/products/importPTdata",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "size",
+									"value": "original",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "uploadFile",
+									"type": "file",
+									"enabled": true,
+									"src": "Prima PT Cleaned up Dump - item_00000346016680_124_new.xml.gz"
+								}
+							]
+						},
+						"description": "import data"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
