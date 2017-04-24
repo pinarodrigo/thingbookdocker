@@ -47,6 +47,78 @@
 			]
 		},
 		{
+			"name": "Taxonomy",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:9111/taxonomy/import?lang=en",
+					"request": {
+						"url": "localhost:9111/taxonomy/import?lang=en",
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-AUTH-TOKEN",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkxzaWpYbzgzN0Via1RBZWEtOVliQ05hRXB3ayJ9.eyJhdWQiOiJtaWNyb3NvZnQ6aWRlbnRpdHlzZXJ2ZXI6dGhpbmdib29rLWJhY2tlbmQiLCJpc3MiOiJodHRwOi8vYWNjb3VudHMuYm9zY2guY29tL2FkZnMvc2VydmljZXMvdHJ1c3QiLCJpYXQiOjE0OTI3OTY5MDYsImV4cCI6MTQ5MjgwMDUwNiwiQm9zY2hHbG9iYWxVc2VySUQiOiJTLTEtNS0yMS0xOTM3ODU1Njk1LTM5NjQ3OTM2MzctODc5NjQ0NDAxLTk3MDkiLCJzdWIiOiJTLTEtNS0yMS0xOTM3ODU1Njk1LTM5NjQ3OTM2MzctODc5NjQ0NDAxLTk3MDkiLCJlbWFpbCI6Im1hdHRoaWFzLm1pbm5pZ0BkZS5ib3NjaC5jb20iLCJ1c2VybmFtZSI6ImQ2MjQ1YWQ4MzE5NGExYTM0MzhkIiwiYXBwdHlwZSI6IlB1YmxpYyIsImFwcGlkIjoiZDcwN2RlMDctYjZmOS00Njk3LTkyYzctNjlkODc0MTY3NDk0IiwiYXV0aG1ldGhvZCI6InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphYzpjbGFzc2VzOlBhc3N3b3JkUHJvdGVjdGVkVHJhbnNwb3J0IiwiYXV0aF90aW1lIjoiMjAxNy0wNC0yMVQxNzo0ODoyNi40MzVaIiwidmVyIjoiMS4wIn0.gNgXoV8b6gTvJKFfS1rMRP76y20XlMvCkehYZ87BW5zn0RD1GAnUlg4w3zqL3JFait-tB6eMj9OVcYkKR6PdgIxzXTW5zTDrJ24FqCCC6m1TamEypYHcNLcR56Vi9Wg3NPoqsLEFx_uHvmrMIQRBQDV_IR7pqkloxIZdMr-cLLDfBgwf6kKdm7IpOp5EEVtc6R4YeEqGlAntwJK2x87cNPzFtYaqswToS0Q7DwIP47TaNP0O4Onj1XWrfbjPuykVITQ7UymV6QEweC9pB5Xe53PTFBC6CO8SuQJ8KtLmMasAAdwo3d39zjJ19j6V3BewOpLbw9AjNbpQzeH2DB7-2g",
+								"description": ""
+							},
+							{
+								"key": "CLIENT-TYPE",
+								"value": "service-web",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "size",
+									"value": "original",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "uploadFile",
+									"type": "file",
+									"enabled": true,
+									"src": "GS1 _ThingBook_Combined Published_Schema as at 01122015.xlsx"
+								}
+							]
+						},
+						"description": "add taxonomy data in en"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "authentication",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:9100/auth/token",
+					"request": {
+						"url": "localhost:9100/token",
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-AUTH-CODE",
+								"value": "AAAAAAAAAAAAAAAAAAAAAA.W9Ilnd6I1Aj3wg7DOtNxibRr8G0.Pbn0NrzQshPnYhFS1Bf7j1IMXiwHyr8IIG-w6W5wGJ86JbmcpF0fuh5v4kqQFVX5IVxAdAvqqUNajqfWbyhgkrKL2MPVXggzGq8HiYsIepzc4TTO0RcZOvbdQac7kcwF-yzYQrDTMXB3RHGbTLoooD5wA0bAQGqOMT1HzsqlUH-Neg9odq646o77cP6V7g4EUjM8d8xWSkpnsLNy63W_zLOpCfXSWuFE1XjOUSxDGBzAaIqUjeZD_aJtbE03bwgj0mWRojaxHWSMvklLAgGwThKy-r37wJfmsl_-y7N9X32FnL5sOslMZIM2M9dVOSGWTgSHOzzV1UWjF5ZoWtmEPQ",
+								"description": ""
+							},
+							{
+								"key": "CLIENT-TYPE",
+								"value": "service-web",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "get JWT for authorization code"
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "prima",
 			"description": "",
 			"item": [
