@@ -10,7 +10,7 @@ java -jar $THINGBOOK_PARAMS product-*.jar >product.out 2>&1 &
 java -jar $THINGBOOK_PARAMS product-taxonomy-*.jar >product-taxonomy.out 2>&1 &
 java -jar $THINGBOOK_PARAMS rating-*.jar >rating.out 2>&1 &
 java -jar $THINGBOOK_PARAMS prima-*.jar >prima.out 2>&1 &
-#java -jar $THINGBOOK_PARAMS authentication-*.jar >authentication.out 2>&1 &
+java -jar $THINGBOOK_PARAMS authentication-*.jar >authentication.out 2>&1 &
 #java -jar $THINGBOOK_PARAMS inventory-*.jar >inventory.out 2>&1 &
 #java -jar $THINGBOOK_PARAMS manufacturer-*.jar >manufacturer.out 2>&1 &
 #java -jar $THINGBOOK_PARAMS manufacturer-web-*.jar >manufacturer-web.out 2>&1 &
