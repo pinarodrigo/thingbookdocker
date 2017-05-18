@@ -6,9 +6,9 @@ RUN mkdir /opt/thingbook/dump
 ADD mongo* /opt/
 ADD dump/ /opt/thingbook/dump/
 ADD services $WORKDIR
-ADD startup.sh $WORKDIR
+ADD startup-docker.sh $WORKDIR
 
 RUN mv /opt/mongo* /opt/mongodb
 RUN mkdir -p /data/db
 
-ENTRYPOINT ./startup.sh
+ENTRYPOINT ./startup-docker.sh
